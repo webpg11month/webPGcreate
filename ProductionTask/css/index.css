@@ -1,0 +1,27 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vw;
+  justify-content: center;
+}
+#head1 {
+  font-size: 5vw;
+}
+a.main {
+  text-decoration: none;
+  color: aqua;
+}
+a.main:hover {
+  color: black;
+}
+.wrapper-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5vw;
+  font-size: 3vw;
+}
+p.main{
+  width: 25vw;
+  font-size: 20px;
+}

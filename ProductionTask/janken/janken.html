@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/janken.css">
+    <link rel="stylesheet" href="https://rawgit.com/filipelinhares/ress/master/dist/ress.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <script type="text/javascript" src="move.js"></script>
+    <title>じゃんけんゲーム</title>
+</head>
+<body>
+
+    <h2 style="text-align: center;">じゃんけんゲーム</h2>
+    <h3 style="text-align: center;">5回戦えるでー</h3>
+    <div class="jankencnt">
+        <div id="disp_count">0</div>
+        <div id="disp_text"></div>
+    </div>
+    <div class="jankencnt">
+      <div id="win_rate"></div>
+    </div>
+    <div class="jankencnt">
+      <div id="jkresult"></div>
+    </div>
+    <h2 style="text-align: center;">相手</h2>
+    <div class="img-cpu">
+        <div id="idImgchng">
+            <img class="idImgchng-1" id="imgnone" src="img/i1.png">
+        </div>
+        <div id="imgoji"></div>
+    </div>
+    <div id="message"></div>
+    <div class="janken">
+    <table>
+        <div id="jkresult_data"></div>
+    </table>
+        <div id="link"></div>
+        <h1>自分</h1>
+        <button name="btn_count_up" data-id="2" class="btn btn1" value="0" ><img src="img/i1.png" alt="グー"></button>
+        <button name="btn_count_up" data-id="3" class="btn btn2" value="1" ><img src="img/i2.png" alt="チョキ"></button>
+        <button name="btn_count_up" data-id="1" class="btn btn3" value="2" ><img src="img/i3.png" alt="パー"></button>
+                <button name="btn_count_up" id="botton4" class="btnstart" value="0" >開始ボタン</button>
+    </div>
+    <script type="text/javascript" src="js/janken.js"></script>
+</body>
+</html>

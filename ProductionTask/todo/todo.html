@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/todo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+      <div class="flex">
+        <div class="test">
+          <ul>
+            <li v-for="todoList in todoLists">
+              <!-- v-bindとv-model(vue記述) -->
+              <input type="checkbox" v-model="todoList.checkToggle">
+              <label v-bind:class={doneTask:todoList.checkToggle}>
+                {{ todoList.title }}
+              </label>
+            </li>
+          </ul>
+          <hr>
+          <!-- v-bindとv-on(vue記述) -->
+          <input type="text"
+            class="taskInput"
+            placeholder="新しいタスクを追加する" 
+            v-model="newTitle"
+            v-on:change="checkEnteredValue()"
+          >
+          <!-- v-bindとv-on(vue記述) -->
+          <button id="addBtn"
+            v-on:click="addToDoList()" 
+            v-bind:class={noclick:!newTitleToggle}
+          >
+            タスクを追加
+          </button>
+          <br>
+          <!-- v-bindとv-on(vue記述) -->
+          <button id="deleteBtn"
+            v-on:click="deleteToDoList()"
+          >
+            タスクを削除
+          </button>
+          <!--  カレンダー作成  -->
+          <button id="prev" type="button">前の月</button>
+          <button id="next" type="button">次の月</button>
+          <div id="calendar"></div> 
+        </div>
+        <div class="test-1">
+          <ul id="datetext"></ul>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </div>
+</body>
+<script type="text/javascript" src="js/todo.js"></script>
+<script type="text/javascript" src="js/calender.js"></script>
+
+</html>

@@ -1,0 +1,122 @@
+*{
+    font-size: 18px;
+  }
+  .flex{
+    display: flex;
+  }
+  .test-1{
+  margin-top: 10vw;
+    border: 1px solid black;
+    width: 30vw;
+    background-color: aqua;
+  }
+  *:focus {
+    outline: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .taskInput, button{
+    height: 36px;
+    border: none;
+    border-radius: 18px;
+  }
+  
+  .taskInput{
+    width: 216px;
+    background-color: #eeeeee;
+    padding-left: 12px;
+  }
+  
+  button{
+    color: #ffffff;
+    width: 144px;
+    cursor: pointer;
+  }
+  
+  #addBtn{
+    background-color: #c81c14;
+    margin-left: 6px;
+  }
+  
+  #deleteBtn{
+    background-color: #00508e;
+    margin-top: 12px;
+  }
+  
+  .doneTask {
+    opacity: 0.7;
+    text-decoration: line-through;
+  }
+  
+  .noclick {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.5;
+  }
+  body {
+    background: #20262E;
+    padding: 20px;
+    font-family: Helvetica;
+  }
+  
+  #app {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all 0.2s;
+    text-align: center;
+  }
+  
+  /*カレンダーデザイン*/
+  #prev {
+        background-color: #00508e;
+        margin-top: 12px;
+  }
+  #next {
+    background-color: #00508e;
+    margin-top: 12px;
+  }
+  #calendar {
+    width: 60vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  section {
+      margin: 10px;
+  }
+
+  h1 {
+      font-size: 18px;
+  }
+
+  table {
+      border-spacing: 0;
+      border-collapse: collapse;
+  }
+
+  td {
+      border: 1px solid #ddd;
+      padding: 5px;
+      text-align: center;
+  }
+
+  td:first-child {
+      color: red;
+  }
+
+  td:last-child {
+      color: royalblue;
+  }
+
+  td.is-disabled {
+      color: #ccc;
+  }
+
+.test-1{
+  width:500px;
+}
